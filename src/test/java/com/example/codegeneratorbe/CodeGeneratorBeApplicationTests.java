@@ -1,0 +1,13 @@
+package com.example.codegeneratorbe;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class CodeGeneratorBeApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
