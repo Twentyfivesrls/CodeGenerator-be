@@ -12,8 +12,11 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class CodeController {
 
-    @Autowired
-    private CodeService codeService;
+    private final CodeService codeService;
+
+    public CodeController(CodeService codeService) {
+        this.codeService = codeService;
+    }
 
     @PostMapping("/save")
     public ResponseEntity<Code> saveCode(@RequestBody Code code) {

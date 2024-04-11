@@ -9,7 +9,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document
+@Document(value = "codegenerator_code")
 public class Code {
 
     @Id
